@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+	font-family: "Rubik", sans-serif;
+	width: 14vw;
+	background-color: hsl(235, 46%, 20%);
+}
+.profilPicture {
+	width: 45%;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+.personInfo {
+	padding: 1em;
+	background-color: hsl(246, 80%, 60%);
+	border-radius: 15px;
+}
+.personInfo h1 {
+	font-weight: 400;
+	color: white;
+}
+.personInfo p {
+	color: white;
+	font-size: 13px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1em;
+}
+
+.buttons button {
+	font-size: 15px;
+	background: none;
+	border: none;
+	color: hsl(235, 45%, 61%);
+	margin: 0.3em;
+}
+
+.buttons button:hover {
+	color: hsl(236, 100%, 87%);
+}
+
+@media only screen and (max-width: 600px) {
+	.panel {
+		width: 90vw;
+	}
+	.profilPicture {
+		width: 20%;
+	}
+	.personInfo {
+		display: flex;
+		align-items: center;
+		padding: 0.3em;
+	}
+
+	.personInfo h1 {
+		font-size: 20px;
+	}
+	.nameSection {
+		display: inline-block;
+		margin-left: 1em;
+	}
+	.buttons {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 1em;
+	}
+}
